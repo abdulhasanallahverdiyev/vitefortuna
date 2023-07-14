@@ -1,0 +1,116 @@
+#home-about {
+    background: linear-gradient(to right, #f8f9fa 0%, #f8f9fa calc(66.66667% - 6rem), transparent calc(66.66667% - 6rem));
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.home-about-content h2 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.home-about-content p {
+    line-height: 34px;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.home-about-content .about-link {
+    background-image: linear-gradient(to bottom, transparent 50%, #268268 50%);
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 100% 0.15em;
+    position: relative;
+    color: #268268;
+    letter-spacing: 0;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.home-about-content .about-link:hover {
+    text-decoration: none;
+    background-size: 100% 0em;
+}
+
+.home-about-content .about-link:after {
+    content: "›";
+    position: absolute;
+    bottom: 0.35em;
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+    font-size: 0.5em;
+    line-height: 0.8;
+    text-align: center;
+    top: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 0.5em;
+    background: #268268;
+}
+
+.about-image img {
+    height: 350px;
+    width: 100% !important;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width:991.99px) {
+
+    /*! about-section */
+    #home-about {
+        background: transparent;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+
+    .home-about-content {
+        margin-bottom: 20px;
+    }
+
+    .home-about-content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .home-about-content p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width:767.99px) {
+    #home-about{
+        padding: 20px 0;
+    }
+    /* !home about */
+    .home-about-content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .home-about-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+}
+@media only screen and (max-width:575.99px) {
+    .home-about-content{
+        text-align: center;
+    }
+    .about-image img{
+        height: 250px;
+    }
+}

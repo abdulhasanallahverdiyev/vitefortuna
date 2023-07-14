@@ -1,0 +1,141 @@
+.portfolio_hero {
+    background: linear-gradient(to right, #f8f9fa 0%, #f8f9fa calc(66.66667% - 6rem), transparent calc(66.66667% - 6rem));
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.portfolio_hero .row {
+    align-items: flex-start;
+}
+
+.portfolio_content {
+    padding: 20px 0;
+}
+
+.portfolio_content h2 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.portfolio_content p {
+    line-height: 34px;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.select_filter {
+    width: 50%;
+    position: relative;
+    display: flex;
+    height: 3em;
+    line-height: 3;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.select_filter:hover .icon {
+    color: #b42323;
+}
+
+.select_filter .icon {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    border-radius: 6px;
+    height: 3em;
+    padding: 0 10px;
+    color: #111;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select_filter select {
+    appearance: none;
+    letter-spacing: 2px;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    flex: 1;
+    border-radius: 6px;
+    padding: 0 10px;
+    color: #19191b;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.select_filter select::-ms-expand {
+    display: none;
+}
+
+
+
+.hero_portfolio_image img {
+    height: 350px;
+    width: 100% !important;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:991.99px) {
+    .portfolio_hero {
+        background: transparent;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+
+    .portfolio_content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio_content p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:767.99px) {
+    .portfolio_hero {
+        padding: 20px 0;
+    }
+
+    .portfolio_content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio_content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:575.99px) {
+    .portfolio_content h2,.portfolio_content p {
+        text-align: center;
+    }
+    .select_filter{
+        margin: 0 auto;
+    }
+    .hero_portfolio_image img{
+        height: 250px;
+    }
+}
+@media only screen and (max-width:575.99px) {
+    .select_filter{
+     width: 80%;
+    }
+    .hero_portfolio_image img{
+        height: 200px;
+    }
+}

@@ -1,0 +1,51 @@
+.scroll_btn {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 1000;
+}
+.scroll_btn  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    animation:playBtn 2s ease infinite;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ED7F1E;
+    font-size: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@keyframes playBtn {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        box-shadow: 0 0 0 5px #ff78028e;
+    }
+
+    25% {
+        box-shadow: 0 0 0 10px #ff770094;
+    }
+
+    25% {
+        box-shadow: 0 0 0 15px #ff770079;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .scroll_btn {
+        bottom: 20px;
+        right: 20px;
+    }
+    .scroll_btn  button {
+            width: 45px;
+            height: 45px;
+        }
+}

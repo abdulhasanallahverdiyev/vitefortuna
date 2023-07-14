@@ -1,0 +1,9 @@
+.main-section {
+    padding-top: 70px;
+}
+
+@media only screen and (max-width:991.99px) {
+    .main-section {
+        padding-top: 66px;
+    }
+}
