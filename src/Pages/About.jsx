@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import AboutHero from '../Components/AboutHero';
 import WriteToUs from '../Components/WriteToUs';
 import Target from '../Components/Target';
-import InputsField from '../Components/InputsField';
 
 
 const About = () => {
@@ -22,7 +21,6 @@ const About = () => {
       <AboutHero/>
       <WriteToUs />
       <Target />
-      <InputsField />
     </main>
   )
 }

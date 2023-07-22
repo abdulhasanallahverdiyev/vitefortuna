@@ -1,10 +1,9 @@
 .hero_services .hero_services_title {
     background: url("../../src/assets/services.jpeg");
-    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 20%;
-    padding: 30px 0;
+    padding: 100px 60px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -131,6 +130,9 @@
     }
 }
     @media only screen and (max-width:344.99px) {
+        .hero_services .hero_services_title{
+            padding: 100px 30px;
+        }
         .hero_services .single_service{
             padding: 15px 10px;
         }

@@ -8,11 +8,11 @@
     margin-bottom: 20px;
 }
 
-.pakets_title h4 {
+.pakets_title h2 {
     padding: 20px 0;
     font-size: 40px;
     line-height: 50px;
-    color: #2A2A2A;
+    color: #Ed7f1e;
     text-transform: capitalize;
 }
 
@@ -79,13 +79,16 @@
 }
 
 
-
 .pricing_text li p {
     overflow: hidden;
     text-overflow: ellipsis;
     height: 40px;
     color: #585757;
     font-size: 14px;
+    text-align: justify;
+}
+.pricing_text  li p svg{
+    color: green;
 }
 
 @media only screen and (max-width:767.99px) {
@@ -99,7 +102,7 @@
         text-align: center;
     }
 
-    .pakets_title h4 {
+    .pakets_title h2 {
         font-size: 30px;
     }
     .price .number{

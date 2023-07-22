@@ -257,9 +257,11 @@
     .navbar-list {
         display: none;
     }
+
     .all-mobile-side {
         display: block;
     }
+
     .navbar-right .social_media {
         display: none;
     }

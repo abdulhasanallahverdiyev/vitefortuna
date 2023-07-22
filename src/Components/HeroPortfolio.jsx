@@ -12,9 +12,14 @@ const HeroPortfolio = () => {
         <div className="row">
           <div className="col-12 col-lg-5">
             <div className="portfolio_content">
-              <h2 data-aos="fade-down">Fortuna - media</h2>
+              <h2 data-aos="fade-down" title="Fortuna - media">
+                Fortuna - media
+              </h2>
               <p data-aos="fade-right">Öz brendini bizimlə tanıt!</p>
-              <div className="select_filter" onClick={() => setIsOpen(!isopen)} data-aos="fade-left">
+              <div
+                className="select_filter"
+                onClick={() => setIsOpen(!isopen)}
+                data-aos="fade-left">
                 <div className="icon">
                   {' '}
                   {isopen ? <FaAngleDown /> : <FaAngleUp />}
@@ -33,7 +38,7 @@ const HeroPortfolio = () => {
           </div>
           <div className="col-12 col-lg-7">
             <div className="hero_portfolio_image" data-aos="fade-left">
-              <img src={portfolioImage} alt="Fortuna - media" />
+              <img src={portfolioImage} alt="Fortuna - media" title='Fortuna - media' />
             </div>
           </div>
         </div>

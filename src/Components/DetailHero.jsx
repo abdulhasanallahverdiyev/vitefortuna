@@ -6,12 +6,14 @@ const DetailHero = ({ data }) => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="detail_title">{data.name}</h1>
+            <h1 className="detail_title">{data?.name}</h1>
           </div>
           <div className="col-lg-12">
-            <h4 className="detail_routes">
-              <Link to="/services">Xidmətlər</Link>
-              <span>/{data.name}</span>
+            <h4 className="detail_routes" title="Xidmətlər">
+              <Link to="/services" rel="nofollow" >
+                Xidmətlər
+              </Link>
+              <span>/{data?.name}</span>
             </h4>
           </div>
         </div>

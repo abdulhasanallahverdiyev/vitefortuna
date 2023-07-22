@@ -2,19 +2,19 @@ import * as Yup from 'yup';
 const emailRegex = new RegExp(`^(([^<>()\\[\\]\\.,;:\\s@"]+(\\.[^<>()\\[\\]\\.,;:\\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$`);
 export const validate = Yup.object({
     first_name: Yup.string()
-        .min(4, 'Name must be 4 characters')
-        .max(15, 'Must be 15 characters or less')
-        .required('Name field is required'),
+        .min(3, 'Adınız 3 simvoldan ibarət olmalıdır')
+        .max(10, '10 və ya daha az simvol olmalıdır')
+        .required('Ad sahəsi tələb olunur'),
     last_name: Yup.string()
-        .min(4, 'Name must be 4 characters')
-        .max(20, 'Must be 20 characters or less')
-        .required('Required'),
-    email: Yup.string().trim("do not leave blank").required("Email is required").email("Invalid email").matches(emailRegex, "Invalid email"),
-    whycontactus: Yup.string().min(3, "It's too short").required("Message field is required"),
+        .min(3, 'Soyadınız 3 simvoldan ibarət olmalıdır')
+        .max(10, '10 və ya daha az simvol olmalıdır')
+        .required('Soyad sahəsi tələb olunur'),
+    email: Yup.string().trim("boş qoymayın").required("E-poçt tələb olunur").email("Səhv e-mail").matches(emailRegex, "Səhv e-mail"),
+    whycontactus: Yup.string().min(10, "Ən azı 10 cümlə olmalıdır").required("Mesaj sahəsi tələb olunur"),
     phone_number: Yup.number()
-        .typeError("That doesn't look like a phone number")
-        .positive("A phone number can't start with a minus")
-        .integer("A phone number can't include a decimal point")
+        .typeError("Bu  düzgün telefon nömrəsinə bənzəmir")
+        .positive("Telefon nömrəsi mənfi ilə başlaya bilməz")
+        .integer("Telefon nömrəsinə ondalık nöqtə daxil ola bilməz")
         .min(8)
-        .required('A phone number is required'),
+        .required('Telefon nömrəsi tələb olunur'),
 })

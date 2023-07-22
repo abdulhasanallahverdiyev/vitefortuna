@@ -68,12 +68,6 @@ const InputsField = () => {
       <div className="container">
         <div className="contact_form">
           <div className="row">
-            <div className="col-12">
-              <div className="contact_title" data-aos="fade-left">
-                <h1>Bizimlə Əlaqə</h1>
-              </div>
-            </div>
-
             <div className="col-12 col-lg-6" data-aos="fade-left">
               <div className="contact_image">
                 <img src={contact} alt="" />
@@ -90,7 +84,7 @@ const InputsField = () => {
                       name="first_name"
                       id="first_name"
                       type="text"
-                      placeholder="First Name"
+                      placeholder="Adınızı qeyd edin..."
                       style={
                         errors.first_name
                           ? { borderColor: 'red' }
@@ -116,7 +110,7 @@ const InputsField = () => {
                       type="text"
                       id="last_name"
                       aria-describedby="emailHelp"
-                      placeholder="Soyad"
+                      placeholder="Soyadınızı qeyd edin..."
                       style={
                         errors.last_name
                           ? { borderColor: 'red' }
@@ -144,7 +138,7 @@ const InputsField = () => {
                       type="tel"
                       id="phone_number"
                       aria-describedby="emailHelp"
-                      placeholder="phone"
+                      placeholder="Nömrənizi qeyd edin....."
                       style={
                         errors.phone_number
                           ? { borderColor: 'red' }
@@ -171,7 +165,7 @@ const InputsField = () => {
                       id="email"
                       type="email"
                       aria-describedby="emailHelp"
-                      placeholder="E-mail"
+                      placeholder="E-mail-inizi qeyd edin"
                       style={
                         errors.email
                           ? { borderColor: 'red' }
@@ -197,7 +191,7 @@ const InputsField = () => {
                     id="whycontactus"
                     cols="30"
                     rows="10"
-                    placeholder="Mesajınız"
+                    placeholder="Mesajınızı qeyd edin...."
                     style={
                       errors.whycontactus
                         ? { borderColor: 'red' }
@@ -213,8 +207,8 @@ const InputsField = () => {
                 </div>
 
                 <div className="form-button">
-                  <button type="submit" className="btn btn-primary mt-3">
-                    Submit
+                  <button type="submit">
+                  Göndər
                   </button>
                 </div>
               </form>

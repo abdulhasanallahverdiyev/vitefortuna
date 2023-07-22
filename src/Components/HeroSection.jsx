@@ -37,12 +37,12 @@ const HeroSection = () => {
   };
   return (
     <section className="hero">
-      {slider.length > 0 ? (
+      {slider?.length > 0 ? (
         <OwlCarousel className="hero-carousel owl-theme" {...options}>
           {slider
-            .sort((a, b) => new Date(b?.created_at) - new Date(a?.created_at))
-            .slice(0, 5)
-            .map((slider, index) => (
+            ?.sort((a, b) => new Date(b?.created_at) - new Date(a?.created_at))
+            ?.slice(0, 5)
+            ?.map((slider, index) => (
               <div
                 className="item"
                 key={index}
@@ -51,11 +51,16 @@ const HeroSection = () => {
                   <div className="row">
                     <div className="col-12">
                       <article className="hero-content">
-                        <h3 className="hero-title">{slider?.slider_header}</h3>
+                        <h1
+                          className="hero-title"
+                          title={slider?.slider_header}>
+                          {slider?.slider_header}
+                        </h1>
                         <p className="hero-paragraph">{slider?.content}</p>
                         <Link
                           to="/portfolio"
                           target="_blank"
+                          rel='nofollow'
                           className="btn black">
                           Portfolio
                         </Link>

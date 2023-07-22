@@ -40,30 +40,30 @@ const Collaborator = () => {
     },
   };
   return (
-      <section id="referance">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg-6">
-              <div className="referance-content" data-aos="fade-right">
-                <h2>Əməkdaşlarımız</h2>
-              </div>
+    <section id="referance">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-lg-6">
+            <div className="referance-content" data-aos="fade-right">
+              <h2 title="Fortuna media-nın əməkdaşları">Əməkdaşlarımız</h2>
             </div>
           </div>
-          {collaborator.length > 0 ? (
-            <OwlCarousel className="referance-carousel owl-theme" {...options}>
-              {collaborator?.map((e, index) => (
-                <div className="item"  key={index}>
-                  <Link target="_blank" to={e.link}>
-                    <img src={e.logo} alt={e.name} />
-                  </Link>
-                </div>
-              ))}
-            </OwlCarousel>
-          ) : (
-            <div>Loading...</div>
-          )}
         </div>
-      </section>
+        {collaborator?.length > 0 ? (
+          <OwlCarousel className="referance-carousel owl-theme" {...options}>
+            {collaborator?.map((e, index) => (
+              <div className="item" key={index}>
+                <Link target="_blank" to={e.link} rel='nofollow'>
+                  <img src={e?.logo} alt={e?.name} title={e?.name} width="100%" height="150px" />
+                </Link>
+              </div>
+            ))}
+          </OwlCarousel>
+        ) : (
+          <div>Loading...</div>
+        )}
+      </div>
+    </section>
   );
 };
 

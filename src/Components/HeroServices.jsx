@@ -10,7 +10,7 @@ const HeroServices = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h2>Xidmətlərimiz</h2>
+              <h2 title='Xidmətlərimiz'>Xidmətlərimiz</h2>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@ const HeroServices = () => {
                     <img src={item.logo} alt={item.name} />
                   </div>
                   <div className="service_content">
-                    <Link to={`${item.id}`}>{item.name} </Link>
+                    <Link to={`${item.id}`} rel='nofollow' target='_blank'>{item.name} </Link>
                   </div>
                 </div>
               </div>

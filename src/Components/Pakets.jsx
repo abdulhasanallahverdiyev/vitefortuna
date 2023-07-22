@@ -1,22 +1,23 @@
 import '../Css/Pakets.css';
 import { BsCurrencyDollar } from 'react-icons/bs';
+import {AiOutlineCheck} from "react-icons/ai"
 const Pakets = ({ data }) => {
   return (
     <div className="pakets_section">
       <div className="container">
         <div className="pakets_title">
-          <h4>paketlər</h4>
+          <h2 title='paketlər'>paketlər</h2>
         </div>
         <div className="row">
-          {data.services_package &&
-            data.services_package?.map((e, index) => (
+          {data?.services_package &&
+            data?.services_package?.map((e, index) => (
               <div
                 key={index}
                 className="col-12 col-lg-4 col-md-6 col-sm-12"
               >
                 <div className="pakets">
                   <div className="text_center">
-                    <h2 className="heading">{e?.package_name}</h2>
+                    <h2 className="heading" title={e?.package_name}>{e?.package_name}</h2>
                     <div className="price">
                       <sup>
                         <BsCurrencyDollar />
@@ -26,12 +27,12 @@ const Pakets = ({ data }) => {
                         <small className="per">/{e?.price_period}</small>
                       </span>
                     </div>
-                    <h3 className="excerpt">Enjoy All The Features</h3>
+                    <h3 className="excerpt" title='Bütün xüsusiyyətlərdən həzz alın'>Bütün xüsusiyyətlərdən həzz alın</h3>
                     <ul className="pricing_text">
                       {e?.package_property &&
                         e?.package_property.map((property, uid) => (
                           <li key={uid}>
-                            <p>{property?.property}</p>
+                            <p><AiOutlineCheck/>{property?.property}</p>
                           </li>
                         ))}
                     </ul>

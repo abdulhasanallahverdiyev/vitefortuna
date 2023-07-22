@@ -24,7 +24,7 @@ function ContextApi({ children }) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    },3000);
   }, []);
   //! collaborator get
   const getCollabrator = async () => {

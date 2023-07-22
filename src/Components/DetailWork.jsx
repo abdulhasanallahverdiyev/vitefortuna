@@ -3,7 +3,7 @@ import '../Css/DetailWork.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link, useParams } from 'react-router-dom';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+// import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BASE_URL } from '../httpRequest/httpRequest';
 const DetailWork = () => {
   useEffect(() => {
@@ -41,7 +41,7 @@ const DetailWork = () => {
     <div className="detail_work">
       <div className="container">
         <div className="detail_work_title" data-aos="fade-up">
-          <h2>Son işlərimiz</h2>
+          <h2 title='Son işlərimiz'>Son işlərimiz</h2>
         </div>
         <div className="row">
           {noworks
@@ -51,14 +51,14 @@ const DetailWork = () => {
                 key={index}
                 className="col-12 col-lg-4 col-md-6" data-aos="fade-right">
                 <div className="single_work">
-                  <Link to="" className="thumbnail">
+                  <Link to={e?.proje_link} className="thumbnail" rel='nofollow' target="_blank">
                     <img src={e?.proje_photo} alt="last work" />
                   </Link>
                   <div className="content-wrapper">
-                    <h5 className="title">{e?.project_name}</h5>
-                    <Link target="_blank" to={e?.proje_link}>
+                    <h5 className="title" title={e?.project_name}>{e?.project_name}</h5>
+                    {/* <Link target="_blank" to={e?.proje_link}>
                       Ətraflı <AiOutlineArrowRight />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

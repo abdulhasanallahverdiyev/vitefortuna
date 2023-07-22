@@ -7,11 +7,11 @@
     text-align: start;
 }
 
-.detail_work detail_work_title h2 {
+.detail_work .detail_work_title h2 {
     font-size: 40px;
     line-height: 1.5;
     font-weight: 500;
-    color: #111;
+    color: #ed7f1e;
     margin: 10px 0;
 }
 

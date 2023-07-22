@@ -4,17 +4,17 @@
 }
 
 .target_section .row {
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .target_section .target_content {
-    text-align: center;
+    text-align: start;
 }
 
 .target_section .target_content h2 {
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 600;
-    color: #111;
+    color: #ED7F1E;
     line-height: 80px;
 }
 
@@ -23,6 +23,7 @@
     font-size: 20px;
     line-height: 30px;
     color: #312d2d;
+    text-align: justify;
 }
 
 @media only screen and (max-width:1199.99px) {

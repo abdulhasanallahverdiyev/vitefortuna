@@ -10,6 +10,7 @@
     margin-bottom: 30px;
     font-weight: 500;
     letter-spacing: 0;
+    color: #ED7F1E;
 }
 
 .home-about-content p {
@@ -19,6 +20,7 @@
     font-weight: 400;
     font-size: 20px;
     overflow: hidden;
+    text-align: justify;
 }
 
 .home-about-content .about-link {
@@ -91,9 +93,10 @@
 }
 
 @media only screen and (max-width:767.99px) {
-    #home-about{
+    #home-about {
         padding: 20px 0;
     }
+
     /* !home about */
     .home-about-content h2 {
         font-size: 20px;
@@ -104,13 +107,15 @@
         font-size: 14px;
         margin-bottom: 10px;
     }
-    
+
 }
+
 @media only screen and (max-width:575.99px) {
-    .home-about-content{
+    .home-about-content {
         text-align: center;
     }
-    .about-image img{
+
+    .about-image img {
         height: 250px;
     }
 }

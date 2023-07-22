@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../Css/HomeNewWorks.css';
 import { Link } from 'react-router-dom';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+// import { AiOutlineArrowRight } from 'react-icons/ai';
 import axios from 'axios';
 import { BASE_URL } from '../httpRequest/httpRequest';
 const HomeNewWorks = () => {
@@ -18,7 +18,7 @@ const HomeNewWorks = () => {
     <div className="newWorks" >
       <div className="container">
         <div className="home_work_title" data-aos="fade-right">
-          <h2>Son işlərimiz</h2>
+          <h2 title='Fortuna medianın son işləri'>Son işlərimiz</h2>
         </div>
         <div className="row">
           {data &&
@@ -30,14 +30,14 @@ const HomeNewWorks = () => {
                   className="col-12 col-lg-4 col-md-6"
                   key={item}>
                   <div className="single_work">
-                    <Link to="" className="thumbnail">
+                    <Link to={work?.proje_link} target='_blank'  rel="nofollow" className="thumbnail">
                       <img src={work.proje_photo} alt={work.project_name} />
                     </Link>
                     <div className="content-wrapper">
-                      <h5 className="title">{work?.project_name}</h5>
-                      <Link target="_blank" to={work?.proje_link}>
-                        View Work <AiOutlineArrowRight />
-                      </Link>
+                      <h5 className="title" title={work?.project_name}>{work?.project_name}</h5>
+                      {/* <Link target="_blank" to={work?.proje_link}>
+                        Ətraflı <AiOutlineArrowRight />
+                      </Link> */}
                     </div>
                   </div>
                 </div>

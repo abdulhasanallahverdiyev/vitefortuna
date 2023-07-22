@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className="navbar-wrapper">
             <div className="logo">
               <Link to="/">
-                <img src={logo} alt="logo" />
+                <img title='Fortuna media' width="150px" height="auto"  src={logo} alt="Fortuna media" />
               </Link>
             </div>
             <ul className="navbar-list">
@@ -76,22 +76,32 @@ const Navbar = () => {
                   Portfolio
                 </NavLink>
               </li>
+              <li className="navbar-item">
+                <NavLink
+                  to="/organization"
+                  className="navbar-link"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  }>
+                Orqanizasiya
+                </NavLink>
+              </li>
             </ul>
             <div className="navbar-right">
               <ul className="social_media">
                 <li>
-                  <Link to="/">
+                  <Link to="/" target='_blank' rel='nofollow'>
                     <FaFacebookF />{' '}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/" target='_blank' rel='nofollow'>
                     <FaInstagram />
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/">
+                  <Link to="/" target='_blank' rel='nofollow'>
                     {' '}
                     <FaLinkedinIn />
                   </Link>
@@ -172,17 +182,17 @@ const Navbar = () => {
                 <div className="mobile_social">
                   <ul>
                     <li>
-                      <Link to="/">
+                      <Link to="/" target='_blank' rel='nofollow'>
                         <FaFacebookF />{' '}
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to="/" target='_blank' rel='nofollow'>
                         <FaInstagram />
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to="/" target='_blank' rel='nofollow'>
                         {' '}
                         <FaLinkedinIn />
                       </Link>

@@ -8,19 +8,18 @@ const AboutHero = () => {
           <div className="row">
             <div className="col-12 col-lg-5" data-aos="fade-right">
               <div className="home-about-content">
-                <h2>Biz kimik?</h2>
+                <h2 title='Haqqımızda'>Biz kimik?</h2>
                 <p>
-                  Sirket haqqinda qisa melumat olacag, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
+                  Fortuna Media MMC fəaliyyətinə 2019 cu ildən başlayıb. Reklam
+                  Agentliyinin əsas hədəfi göstərdiyi xidmət sahəsində olan
+                  boşluqları aradan qaldırmaq, müştərilərə şablondan kənar daha
+                  yüksək və kreativ ideyalarla xidmət həyata keçirməkdir.
                 </p>
               </div>
             </div>
             <div className="col-12 col-lg-7" data-aos="fade-left">
               <div className="about-image">
-                <img src={aboutHero} alt="home about" />
+                <img src={aboutHero} alt="haqqımızda" />
               </div>
             </div>
           </div>

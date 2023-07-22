@@ -7,14 +7,21 @@ const WriteToUs = () => {
       <div className="container">
         <div className="main-box">
           <div className="vibration_img">
-            <Link to="https://api.whatsapp.com/send?phone=+994552624037">
-              <img src={whatsapp} alt="whatsapp icon" />
+            <Link to="https://api.whatsapp.com/send?phone=+994">
+              <img
+                src={whatsapp}
+                alt="whatsapp icon"
+                width="140px"
+                height="140px"
+              />
             </Link>
           </div>
           <div className="chat">
-            <h2>Sualınız var? </h2>
-            <h3>Bir kliklə yazın, yardımçı olaq. </h3>
-            <Link to="https://api.whatsapp.com/send?phone=+994552624037" target="_blank">
+            <h2 title="Sualınızı whatsappla bildirin">Sualınız var? </h2>
+            <h3 title="bir kliklə bizə yazın">
+              Bir kliklə yazın, yardımçı olaq.{' '}
+            </h3>
+            <Link  rel='nofollow' to="https://api.whatsapp.com/send?phone=+994" target="_blank">
               WhatsApp-a yazın
             </Link>
           </div>

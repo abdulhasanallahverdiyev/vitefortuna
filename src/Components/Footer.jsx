@@ -6,12 +6,10 @@ import { Link } from 'react-router-dom';
 import '../Css/Footer.css';
 import {
   AiOutlineInstagram,
-  AiOutlineSend,
   AiOutlineWhatsApp,
 } from 'react-icons/ai';
 import {
   BsFacebook,
-  BsTelegram,
   BsFillTelephonePlusFill,
 } from 'react-icons/bs';
 import { mainContext } from '../Context/Context';
@@ -24,16 +22,16 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="subscribe_area">
+      <div className="subscribe_area" >
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <div className="subscribe-text" data-aos="fade-left">
-                <h3>Bizimlə əlaqə</h3>
-                <h6>Zəhmət olmasa əlaqə poçtunuzu qeyd edin</h6>
+              <div className="subscribe-text">
+                <h3 title='Fortuna media ilə əlaqə'>Bizimlə əlaqə</h3>
+                <h6 title='Fortuna media ilə əlaqə'>Zəhmət olmasa əlaqə poçtunuzu qeyd edin</h6>
               </div>
             </div>
-            <div className="col-12 col-lg-6" data-aos="fade-right">
+            <div className="col-12 col-lg-6" >
               <div className="subscribe-form">
                 <form onSubmit={postSubData}>
                   <input
@@ -41,7 +39,7 @@ const Footer = () => {
                     name="email"
                     value={subState.email}
                     onChange={handleSubChange}
-                    placeholder="Your Email"
+                    placeholder="E-poçt hesabınızı qeyd edin"
                     required
                   />
                   <button type="submit">Göndər</button>
@@ -57,7 +55,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-12 col-lg-4">
                 <div className="footer_logo_content">
-                  <img src={logoFooter} alt="" />
+                  <img src={logoFooter} alt="Fortuna-media" />
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Minus quaerat sed facilis repellendus! Dolorem maiores,
@@ -68,22 +66,22 @@ const Footer = () => {
               </div>
               <div className="col-12 col-lg-2">
                 <div className="footer_links_content">
-                  <h3>Bizim Şirkət</h3>
+                  <h3 title='Bizim Şirkət'>Bizim Şirkət</h3>
                   <ul>
                     <li>
                       <Link to="/">Əsas səhifə</Link>
                     </li>
                     <li>
-                      <Link to="/">Haqqımızda</Link>
+                      <Link to="/about">Haqqımızda</Link>
                     </li>
                     <li>
-                      <Link to="/">Xidmətlər</Link>
+                      <Link to="/services">Xidmətlər</Link>
                     </li>
                     <li>
-                      <Link to="/">Portfolio</Link>
+                      <Link to="/portfolio">Portfolio</Link>
                     </li>
                     <li>
-                      <Link to="/">Əlaqə</Link>
+                      <Link to="/organization">Orqanizasiya</Link>
                     </li>
                   </ul>
                 </div>
@@ -91,7 +89,7 @@ const Footer = () => {
 
               <div className="col-12 col-lg-3">
                 <div className="footer_contact_content">
-                  <h3>Əlaqə</h3>
+                  <h3 title='Əlaqə'>Əlaqə</h3>
                   <ul>
                     <li>
                       <GoLocation />
@@ -114,29 +112,24 @@ const Footer = () => {
               </div>
               <div className="col-12 col-lg-3">
                 <div className="subscribe_and_social">
-                  <h3>Sosial</h3>
+                  <h3 title='Sosial'>Sosial</h3>
                   <div className="subscribe_social_content">
                     <ul>
                       <li>
-                        <Link to="/">
+                        <Link to="/" rel='nofollow' target='_blank'>
                           {' '}
                           <AiOutlineInstagram />
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/" rel='nofollow' target='_blank'>
                           <BsFacebook />
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">
+                        <Link to="/" rel='nofollow' target='_blank'>
                           {' '}
                           <AiOutlineWhatsApp />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/">
-                          <BsTelegram />
                         </Link>
                       </li>
                     </ul>
