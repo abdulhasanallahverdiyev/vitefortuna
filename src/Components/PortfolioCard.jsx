@@ -25,7 +25,7 @@ const PortfolioCard = () => {
                   ? project
                   : project.service.name.includes(select);
               })
-              .map((projects, id) => (
+              ?.map((projects, id) => (
                 <AnimatePresence key={id}>
                   <motion.div
                     layout

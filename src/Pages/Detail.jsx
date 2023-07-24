@@ -11,6 +11,13 @@ const Detail = () => {
   const [data, setData] = useState([]);
   const { id } = useParams();
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }, []);
+  useEffect(() => {
     const getData = async () => {
       try {
         const response = await axios.get(

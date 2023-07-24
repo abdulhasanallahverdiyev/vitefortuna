@@ -25,7 +25,7 @@ const HeroServices = () => {
                     <img src={item.logo} alt={item.name} />
                   </div>
                   <div className="service_content">
-                    <Link to={`${item.id}`} rel='nofollow' target='_blank'>{item.name} </Link>
+                    <Link to={`${item.id}`} rel='nofollow'>{item.name} </Link>
                   </div>
                 </div>
               </div>
