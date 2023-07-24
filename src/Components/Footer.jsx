@@ -5,13 +5,11 @@ import { BsTelephoneOutboundFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import '../Css/Footer.css';
 import {
+  AiFillYoutube,
   AiOutlineInstagram,
   AiOutlineWhatsApp,
 } from 'react-icons/ai';
-import {
-  BsFacebook,
-  BsFillTelephonePlusFill,
-} from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
 import { mainContext } from '../Context/Context';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,16 +20,18 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="subscribe_area" >
+      <div className="subscribe_area">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-6">
               <div className="subscribe-text">
-                <h3 title='Fortuna media ilə əlaqə'>Bizimlə əlaqə</h3>
-                <h6 title='Fortuna media ilə əlaqə'>Zəhmət olmasa əlaqə poçtunuzu qeyd edin</h6>
+                <h3 title="Fortuna media ilə əlaqə">Bizimlə əlaqə</h3>
+                <h6 title="Fortuna media ilə əlaqə">
+                  Zəhmət olmasa əlaqə poçtunuzu qeyd edin
+                </h6>
               </div>
             </div>
-            <div className="col-12 col-lg-6" >
+            <div className="col-12 col-lg-6">
               <div className="subscribe-form">
                 <form onSubmit={postSubData}>
                   <input
@@ -57,16 +57,17 @@ const Footer = () => {
                 <div className="footer_logo_content">
                   <img src={logoFooter} alt="Fortuna-media" />
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Minus quaerat sed facilis repellendus! Dolorem maiores,
-                    ipsam nostrum pariatur cumque quidem iure est earum, eum,
-                    magnam sapiente unde voluptate vero quam.
+                    Fortuna Media MMC fəaliyyətinə 2019 cu ildən başlayıb.
+                    Reklam Agentliyinin əsas hədəfi göstərdiyi xidmət sahəsində
+                    olan boşluqları aradan qaldırmaq, müştərilərə şablondan
+                    kənar daha yüksək və kreativ ideyalarla xidmət həyata
+                    keçirməkdir.
                   </p>
                 </div>
               </div>
               <div className="col-12 col-lg-2">
                 <div className="footer_links_content">
-                  <h3 title='Bizim Şirkət'>Bizim Şirkət</h3>
+                  <h3 title="Bizim Şirkət">Bizim Şirkət</h3>
                   <ul>
                     <li>
                       <Link to="/">Əsas səhifə</Link>
@@ -81,7 +82,7 @@ const Footer = () => {
                       <Link to="/portfolio">Portfolio</Link>
                     </li>
                     <li>
-                      <Link to="/organization">Orqanizasiya</Link>
+                      <Link to="/organization">Organizasiya</Link>
                     </li>
                   </ul>
                 </div>
@@ -89,7 +90,7 @@ const Footer = () => {
 
               <div className="col-12 col-lg-3">
                 <div className="footer_contact_content">
-                  <h3 title='Əlaqə'>Əlaqə</h3>
+                  <h3 title="Əlaqə">Əlaqə</h3>
                   <ul>
                     <li>
                       <GoLocation />
@@ -97,39 +98,52 @@ const Footer = () => {
                     </li>
                     <li>
                       <GoMail />
-                      <Link to="mailto:adkasd@gmail.com">adkasd@gmail.com</Link>
+                      <Link to="mailto:info@fortunamedia.az">
+                        info@fortunamedia.az
+                      </Link>
                     </li>
                     <li>
                       <BsTelephoneOutboundFill />
-                      <Link to="tel:+994-12 565 39 05">+994-12 565 39 05</Link>
-                    </li>
-                    <li>
-                      <BsFillTelephonePlusFill />
-                      <Link to="tel:+994-70 565 39 05">+994-70 565 39 05</Link>
+                      <Link to="tel:+994 55 808 76 47">+994 55 808 76 47</Link>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="col-12 col-lg-3">
                 <div className="subscribe_and_social">
-                  <h3 title='Sosial'>Sosial</h3>
+                  <h3 title="Sosial">Sosial</h3>
                   <div className="subscribe_social_content">
                     <ul>
                       <li>
-                        <Link to="/" rel='nofollow' target='_blank'>
+                        <Link
+                          to="https://www.instagram.com/fortunamedia_/#"
+                          rel="nofollow"
+                          target="_blank">
                           {' '}
                           <AiOutlineInstagram />
                         </Link>
                       </li>
                       <li>
-                        <Link to="/" rel='nofollow' target='_blank'>
+                        <Link to="/" rel="nofollow" target="_blank">
                           <BsFacebook />
                         </Link>
                       </li>
                       <li>
-                        <Link to="/" rel='nofollow' target='_blank'>
+                        <Link
+                          to="https://api.whatsapp.com/send?phone=+994 55 808 76 47"
+                          rel="nofollow"
+                          target="_blank">
                           {' '}
                           <AiOutlineWhatsApp />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="https://www.youtube.com/@FortunaMediaOfficial"
+                          target="_blank"
+                          rel="nofollow">
+                          {' '}
+                          <AiFillYoutube />
                         </Link>
                       </li>
                     </ul>
@@ -153,7 +167,7 @@ const Footer = () => {
                   <p>
                     Dizayn:
                     <Link target="_blank" to="https://www.neymantech.com/">
-                      NeymanTech
+                      neyman enterprise technologies
                     </Link>
                   </p>
                 </article>

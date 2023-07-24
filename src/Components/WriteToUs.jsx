@@ -7,7 +7,7 @@ const WriteToUs = () => {
       <div className="container">
         <div className="main-box">
           <div className="vibration_img">
-            <Link to="https://api.whatsapp.com/send?phone=+994">
+            <Link to="https://api.whatsapp.com/send?phone=+994 55 808 76 47">
               <img
                 src={whatsapp}
                 alt="whatsapp icon"

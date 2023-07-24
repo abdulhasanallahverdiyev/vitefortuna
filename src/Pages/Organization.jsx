@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import InputsField from "../Components/InputsField"
+import OrganizationTitle from "../Components/OrganizationTitle";
 
 const Organization = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const Organization = () => {
   }, [])
   return (
     <main className="main-section">
+      <OrganizationTitle/>
       <InputsField />
     </main>
   )

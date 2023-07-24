@@ -1,12 +1,13 @@
 import { useContext, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { mainContext } from '../Context/Context';
-import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
-import logo from '../assets/FortunaMedia.png';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import logo from '../assets/logo-fortuna.png';
 import close from '../assets/close.png';
 import '../Css/Navbar.css';
+import { AiFillYoutube } from 'react-icons/ai';
 const Navbar = () => {
-  const { open, handleOpen,sidebarActive } = useContext(mainContext);
+  const { open, handleOpen, sidebarActive } = useContext(mainContext);
   const [navbar, setNavbar] = useState(false);
   let activeStyle = {
     color: '#ED7F1E',
@@ -32,7 +33,13 @@ const Navbar = () => {
           <div className="navbar-wrapper">
             <div className="logo">
               <Link to="/">
-                <img title='Fortuna media' width="150px" height="auto"  src={logo} alt="Fortuna media" />
+                <img
+                  title="Fortuna media"
+                  width="150px"
+                  height="auto"
+                  src={logo}
+                  alt="Fortuna media"
+                />
               </Link>
             </div>
             <ul className="navbar-list">
@@ -83,27 +90,33 @@ const Navbar = () => {
                   style={({ isActive }) =>
                     isActive ? activeStyle : undefined
                   }>
-                Orqanizasiya
+                  Organizasiya
                 </NavLink>
               </li>
             </ul>
             <div className="navbar-right">
               <ul className="social_media">
                 <li>
-                  <Link to="/" target='_blank' rel='nofollow'>
+                  <Link to="/" target="_blank" rel="nofollow">
                     <FaFacebookF />{' '}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" target='_blank' rel='nofollow'>
+                  <Link
+                    to="https://www.instagram.com/fortunamedia_/#"
+                    target="_blank"
+                    rel="nofollow">
                     <FaInstagram />
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/" target='_blank' rel='nofollow'>
+                  <Link
+                    to="https://www.youtube.com/@FortunaMediaOfficial"
+                    target="_blank"
+                    rel="nofollow">
                     {' '}
-                    <FaLinkedinIn />
+                    <AiFillYoutube />
                   </Link>
                 </li>
               </ul>
@@ -121,91 +134,110 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          </nav>
+        </nav>
       </div>
-      <div className='all-mobile-side'>
-      <div
-            className="side-bar"
-            style={{ transform: open ? 'translate(0%)' : 'translate(-100%)' }}>
-            <div className="side-bar-header">
-              <div className="logo">
-                <Link to="/">
-                  <img src={logo} alt="logo" />
-                </Link>
-              </div>
-              <div className="close-side-bar">
-                <button onClick={handleOpen}>
-                  <img src={close} alt="close icon for menu" />
-                </button>
-              </div>
+      <div className="all-mobile-side">
+        <div
+          className="side-bar"
+          style={{ transform: open ? 'translate(0%)' : 'translate(-100%)' }}>
+          <div className="side-bar-header">
+            <div className="logo">
+              <Link to="/">
+                <img src={logo} alt="logo" />
+              </Link>
             </div>
-            <div className="side-bar-body">
-              <ul className="menu">
-                <li>
-                  <NavLink
-                    to="/"
-                    style={({ isActive }) =>
-                      isActive ? activeStyle : undefined
-                    }>
-                    Əsas
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/about"
-                    style={({ isActive }) =>
-                      isActive ? activeStyle : undefined
-                    }>
-                    Haqqımızda
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/services"
-                    style={({ isActive }) =>
-                      isActive ? activeStyle : undefined
-                    }>
-                    Xidmətlər
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/portfolio"
-                    style={({ isActive }) =>
-                      isActive ? activeStyle : undefined
-                    }>
-                    Portfolio
-                  </NavLink>
-                </li>
-              </ul>
-              <div className="social-mobile">
-                <div className="mobile_social">
-                  <ul>
-                    <li>
-                      <Link to="/" target='_blank' rel='nofollow'>
-                        <FaFacebookF />{' '}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/" target='_blank' rel='nofollow'>
-                        <FaInstagram />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/" target='_blank' rel='nofollow'>
-                        {' '}
-                        <FaLinkedinIn />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+            <div className="close-side-bar">
+              <button onClick={handleOpen}>
+                <img src={close} alt="close icon for menu" />
+              </button>
+            </div>
+          </div>
+          <div className="side-bar-body">
+            <ul className="menu">
+              <li>
+                <NavLink
+                  to="/"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  }>
+                  Əsas
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/about"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  }>
+                  Haqqımızda
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  }>
+                  Xidmətlər
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/portfolio"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  }>
+                  Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/organization"
+                  className="navbar-link"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : undefined
+                  }>
+                  Organizasiya
+                </NavLink>
+              </li>
+            </ul>
+            <div className="social-mobile">
+              <div className="mobile_social">
+                <ul>
+                  <li>
+                    <Link to="/" target="_blank" rel="nofollow">
+                      <FaFacebookF />{' '}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="https://www.instagram.com/fortunamedia_/#"
+                      target="_blank"
+                      rel="nofollow">
+                      <FaInstagram />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="https://www.youtube.com/@FortunaMediaOfficial"
+                      target="_blank"
+                      rel="nofollow">
+                      {' '}
+                      <AiFillYoutube />
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div className="overlay-sidebar " style={sidebarActive ? {display:"block"} :{display:"none"}}></div>
-   
+        </div>
+        <div
+          className="overlay-sidebar "
+          style={
+            sidebarActive ? { display: 'block' } : { display: 'none' }
+          }></div>
       </div>
-       </header>
+    </header>
   );
 };
 

@@ -3,11 +3,11 @@ const emailRegex = new RegExp(`^(([^<>()\\[\\]\\.,;:\\s@"]+(\\.[^<>()\\[\\]\\.,;
 export const validate = Yup.object({
     first_name: Yup.string()
         .min(3, 'Adınız 3 simvoldan ibarət olmalıdır')
-        .max(10, '10 və ya daha az simvol olmalıdır')
+        .max(20, '20 və ya daha az simvol olmalıdır')
         .required('Ad sahəsi tələb olunur'),
     last_name: Yup.string()
         .min(3, 'Soyadınız 3 simvoldan ibarət olmalıdır')
-        .max(10, '10 və ya daha az simvol olmalıdır')
+        .max(20, '20 və ya daha az simvol olmalıdır')
         .required('Soyad sahəsi tələb olunur'),
     email: Yup.string().trim("boş qoymayın").required("E-poçt tələb olunur").email("Səhv e-mail").matches(emailRegex, "Səhv e-mail"),
     whycontactus: Yup.string().min(10, "Ən azı 10 cümlə olmalıdır").required("Mesaj sahəsi tələb olunur"),

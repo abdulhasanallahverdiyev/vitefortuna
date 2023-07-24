@@ -23,6 +23,11 @@ const Collaborator = () => {
         items: 1,
         stagePadding: 0,
       },
+      345: {
+        loop: false,
+        items: 2,
+        stagePadding: 0,
+      },
       600: {
         loop: false,
         items: 2,
@@ -53,8 +58,14 @@ const Collaborator = () => {
           <OwlCarousel className="referance-carousel owl-theme" {...options}>
             {collaborator?.map((e, index) => (
               <div className="item" key={index}>
-                <Link target="_blank" to={e.link} rel='nofollow'>
-                  <img src={e?.logo} alt={e?.name} title={e?.name} width="100%" height="150px" />
+                <Link target="_blank" to={e.link} rel="nofollow">
+                  <img
+                    src={e?.logo}
+                    alt={e?.name}
+                    title={e?.name}
+                    width="100%"
+                    height="150px"
+                  />
                 </Link>
               </div>
             ))}

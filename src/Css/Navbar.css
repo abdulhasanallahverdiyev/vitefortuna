@@ -37,8 +37,8 @@
 }
 
 .logo a img {
-    width: 150px;
-    height: auto;
+    width: 100%;
+    height: 80px;
 }
 
 .navbar-list {
@@ -147,13 +147,14 @@
 
 .navbar-right .social_media li a {
     padding: 0 5px;
-    color: #494949;
+    color: #ed7f1e;
+    font-size: 18px;
     font-weight: 400;
     transition: 0.5s;
 }
 
 .navbar-right .social_media li a:hover {
-    color: #ed7f1e;
+    color: #72390888;
 }
 
 .all-mobile-side {
@@ -194,8 +195,8 @@
 }
 
 .side-bar .side-bar-header .logo a img {
-    max-width: 200px;
-    height: auto;
+   width: 100%;
+    height: 70px;
 }
 
 .side-bar .side-bar-header {
@@ -276,6 +277,11 @@
 }
 
 @media screen and (max-width:575.99px) {
+    .hamburger button {
+        height: 40px;
+        width: 40px;
+    }
+
     .side-bar {
         width: 245px;
         padding: 0 10px;

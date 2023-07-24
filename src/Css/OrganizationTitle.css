@@ -1,0 +1,19 @@
+.organiztion-title {
+    padding: 30px 0;
+}
+
+.organiztion-title h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ed7f1e;
+}
+
+@media only screen and (max-width:575.99px) {
+    .organiztion-title {
+        padding: 30px 0 0 0;
+    }
+    .organiztion-title h1 {
+        font-size: 16px;
+    }
+}

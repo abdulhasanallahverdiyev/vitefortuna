@@ -155,11 +155,11 @@
     }
 
     .referance-carousel .owl-item {
-        height: 300px !important;
+        height: 200px !important;
     }
 
     .referance-carousel .owl-item .item {
-        height: 300px !important;
+        height: 200px !important;
     }
 
     .referance-content h2 {
@@ -186,11 +186,11 @@
         top: -22%;
     }
     .referance-carousel .owl-item {
-        height: 250px !important;
+        height: 200px !important;
     }
 
     .referance-carousel .owl-item .item {
-        height: 250px !important;
+        height: 200px !important;
     }
 
 }
