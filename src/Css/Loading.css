@@ -17,11 +17,11 @@
     justify-content: center;
     text-align: center;
     color: #fff;
-    animation: play 2s ease infinite;
+    animation: playLoad 2s ease infinite;
 
 }
 
-@keyframes play {
+@keyframes playLoad {
     0% {
         transform: scale(1);
     }
@@ -31,8 +31,14 @@
     25% {
         box-shadow: 0 0 0 10px rgb(237, 127, 30,), 0 0 0 20px rgba(237, 127, 30, 0.452);
     }
-    25% {
-        box-shadow: 0 0 0 10px rgb(237, 127, 30,), 0 0 0 20px rgba(237, 127, 30, 0.452);
-
+    50% {
+        box-shadow: 0 0 0 30px rgb(237, 127, 30,), 0 0 0 30px rgba(237, 127, 30, 0.452);
     }
+    75% {
+        box-shadow: 0 0 0 40px rgb(237, 127, 30,), 0 0 0 40px rgba(237, 127, 30, 0.452);
+    }
+    100% {
+        box-shadow: 0 0 0 50px rgb(237, 127, 30,), 0 0 0 50px rgba(237, 127, 30, 0.452);
+    }
+    
 }

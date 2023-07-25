@@ -130,7 +130,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          to="https://api.whatsapp.com/send?phone=+994 55 808 76 47"
+                          to="https://api.whatsapp.com/send?phone=+994558087647"
                           rel="nofollow"
                           target="_blank">
                           {' '}
@@ -154,22 +154,9 @@ const Footer = () => {
           </div>
           <div className="footer_end">
             <div className="row">
-              <div className="col-12 col-lg-6 col-md-6 col-xs-6 ">
+              <div className="col-12">
                 <article className="footer_end_left">
-                  <p>
-                    ©<script>document.write(new Date().getFullYear())</script>
-                    2023 Bütün hüquqlar qorunur.
-                  </p>
-                </article>
-              </div>
-              <div className="col-12 col-lg-6 col-md-6 col-xs-6">
-                <article className="footer_end_right">
-                  <p>
-                    Dizayn:
-                    <Link target="_blank" to="https://www.neymantech.com/">
-                      neyman enterprise technologies
-                    </Link>
-                  </p>
+                  <p>© 2023 Bütün hüquqlar qorunur.</p>
                 </article>
               </div>
             </div>

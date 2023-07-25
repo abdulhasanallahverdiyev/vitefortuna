@@ -1,6 +1,9 @@
 .write-to-us {
-    background-color: #033d03be;
-    padding: 40px 0px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.712) 9%, rgba(0, 0, 0, 0.712) 44%, rgba(0, 0, 0, 0.712)  54%, rgba(0, 0, 0, 0.712) 100%, rgba(0, 0, 0, 0.712) 100%), url("../assets/wtite-to-us.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 60px;
 }
 
 .write-to-us .main-box {
@@ -13,7 +16,7 @@
 .write-to-us .main-box .vibration_img {
     width: 140px;
     height: 140px;
-    animation:playWhatsap 2s ease infinite;
+    animation: playWhatsap 2s ease infinite;
     border-radius: 50%;
 }
 
@@ -25,6 +28,7 @@
 .main-box .vibration_img a img {
     width: 100%;
     height: 100%;
+
 }
 
 @keyframes playWhatsap {
@@ -33,15 +37,15 @@
     }
 
     15% {
-        box-shadow: 0 0 0 5px rgb(171, 228, 104);
+        box-shadow: 0 0 0 5px #ed7f1ea1;
     }
 
     25% {
-        box-shadow: 0 0 0 10px rgb(116, 216, 0), 0 0 0 20px rgb(170, 228, 103);
+        box-shadow: 0 0 0 10px rgba(214, 105, 10, 0.349), 0 0 0 20px #e97007c7;
     }
 
-    25% {
-        box-shadow: 0 0 0 15px rgb(116, 216, 0), 0 0 0 30px rgb(93, 173, 0);
+    50% {
+        box-shadow: 0 0 0 15px rgb(216, 104, 0), 0 0 0 30px rgb(212, 149, 14);
     }
 }
 
@@ -58,6 +62,7 @@
 .main-box .chat h3 {
     font-size: 25px;
     color: #fff;
+    font-weight: bold;
     margin-bottom: 25px;
 }
 
@@ -71,8 +76,8 @@
 }
 
 .main-box .chat a:hover {
-    background-color: #80c41c;
-    border-color: #80c41c;
+    background-color: #ed7f1e;
+    border-color: #ed7f1e;
 }
 
 @media only screen and (max-width:1199.99px) {

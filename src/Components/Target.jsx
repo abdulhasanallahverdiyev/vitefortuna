@@ -14,10 +14,9 @@ const Target = () => {
             <div className="target_content">
               <h2 title="Hədəfimiz">Hədəfimiz</h2>
               <p>
-                Burda hedef nedi onla bagli yazi olacag .adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{' '}
+                Reklam Agentliyinin əsas hədəfi göstərdiyi xidmət sahəsində olan
+                boşluqları aradan qaldırmaq, müştərilərə şablondan kənar daha
+                yüksək və kreativ ideyalarla xidmət həyata keçirməkdir.
               </p>
             </div>
           </div>

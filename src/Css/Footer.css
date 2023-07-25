@@ -163,6 +163,7 @@
 .footer_end .footer_end_left p {
     color: #111;
     margin: 0;
+    text-align: center;
     font-size: 16px;
 }
 
@@ -270,6 +271,9 @@
         text-align: center;
     }
 
+    .footer_end .footer_end_left p{
+        text-align: start;
+    }
     .subscribe-text h6 {
         margin-bottom: 20px;
     }
