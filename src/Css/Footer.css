@@ -162,12 +162,16 @@
 
 .footer_end .footer_end_left p {
     color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     text-align: center;
     font-size: 16px;
 }
 
 .footer_end .footer_end_left p a {
+    margin-left: 10px;
     color: #ED7F1E;
 }
 
@@ -276,7 +280,7 @@
     }
 
     .footer_end .footer_end_left p {
-        text-align: start;
+        justify-content: flex-start;
     }
 
     .subscribe-text h6 {
@@ -287,6 +291,16 @@
 @media only screen and (max-width:767.99px) {
     .footer_end .footer_end_right {
         justify-content: flex-start;
+    }
+
+    .footer_end .footer_end_left p{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    
+    }
+    .footer_end .footer_end_left p a{
+        margin: 0;
     }
 
     .subscribe-form form input {
@@ -329,8 +343,7 @@
     }
 
     .footer_end .footer_end_left p {
-        text-align: center;
-        margin-bottom: 15px;
+        align-items: center;
     }
 
     .footer_end .footer_end_right {

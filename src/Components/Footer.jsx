@@ -156,7 +156,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-12">
                 <article className="footer_end_left">
-                  <p>© 2023 Bütün hüquqlar qorunur. <Link to="https://neymantech.com/">Neyman Enterprise Technologies</Link> </p>
+                  <p><span>© 2023 Bütün hüquqlar qorunur.</span> <Link to="https://neymantech.com/">Neyman Enterprise Technologies</Link> </p>
                 </article>
               </div>
             </div>
