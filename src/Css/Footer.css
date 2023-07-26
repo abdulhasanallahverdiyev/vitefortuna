@@ -167,6 +167,10 @@
     font-size: 16px;
 }
 
+.footer_end .footer_end_left p a {
+    color: #ED7F1E;
+}
+
 .footer_end .footer_end_right {
     margin: 0;
     font-size: 16px;
@@ -249,7 +253,7 @@
     border: none;
     color: #ffffff;
     background-color: #ED7F1E;
-    border-radius:  0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
     border-radius: 0 3px 3px 0;
     padding: 0;
     font-size: 14px;
@@ -271,9 +275,10 @@
         text-align: center;
     }
 
-    .footer_end .footer_end_left p{
+    .footer_end .footer_end_left p {
         text-align: start;
     }
+
     .subscribe-text h6 {
         margin-bottom: 20px;
     }

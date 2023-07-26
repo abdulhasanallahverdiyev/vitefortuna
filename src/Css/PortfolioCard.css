@@ -7,11 +7,11 @@
     text-align: start;
 }
 
-.portfolio_section .portfolio_title  h2 {
+.portfolio_section .portfolio_title h2 {
     font-size: 40px;
     line-height: 1.5;
     font-weight: 500;
-    color: #111;
+    color: #ed7f1e;
     margin: 10px 0;
 }
 
@@ -139,7 +139,7 @@
 }
 
 @media only screen and (max-width: 991.99px) {
-    .portfolio_section .portfolio_title  h2 {
+    .portfolio_section .portfolio_title h2 {
         font-size: 40px;
         line-height: 60px;
     }
@@ -166,7 +166,7 @@
 }
 
 @media only screen and (max-width: 767.99px) {
-    .portfolio_section .portfolio_title  h2 {
+    .portfolio_section .portfolio_title h2 {
         font-size: 35px;
         line-height: 55px;
     }
@@ -187,13 +187,15 @@
 }
 
 @media only screen and (max-width: 575.99px) {
-    .portfolio_section .portfolio_title  h2 {
+    .portfolio_section .portfolio_title h2 {
         font-size: 30px;
         line-height: 55px;
     }
-    .portfolio_section .portfolio_title  {
+
+    .portfolio_section .portfolio_title {
         text-align: center;
     }
+
     .portfolio_section .single_work {
         padding: 10px;
     }
