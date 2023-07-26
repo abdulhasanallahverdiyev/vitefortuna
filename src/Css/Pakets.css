@@ -69,33 +69,29 @@
 
 .pricing_text {
     margin-bottom: 1.5rem;
-    padding: 0 20px;
-    min-height: 60px;
-    overflow: hidden;
+    padding: 10px 20px;
+    height: 200px;
+    overflow-y: scroll;
     text-overflow: ellipsis;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
+.pricing_text::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 3px;
+}
+.pricing_text::-webkit-scrollbar-thumb {
+    background-color: #Ed7f1e;
+  }
+ 
 .pricing_text li {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    height: calc(1.45em * 2);
-    text-overflow: ellipsis;
-    white-space: normal;
+    margin-bottom: 20px;
 }
 
 .pricing_text li p {
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    text-align: justify;
-    -webkit-line-clamp: 2;  
     line-height: 1.5;
+    text-align: start;
     color: #585757;
+    margin: 0;
     font-size: 14px;
 }
 
