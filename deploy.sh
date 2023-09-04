@@ -7,5 +7,5 @@ npm run build
 
 echo "Deploying files to server..."
 
-scp -r dist/* root@164.92.238.174:/var/www/164.92.238.174/
+scp -r dist/* root@209.38.244.216:/var/www/209.38.244.216/
 echo "Done!"
