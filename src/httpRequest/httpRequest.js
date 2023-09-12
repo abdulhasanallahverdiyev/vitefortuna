@@ -1,1 +1,1 @@
-export const BASE_URL="http://138.68.104.225/"
+export const BASE_URL="http://fortunamedia.az/"
